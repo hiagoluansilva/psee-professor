@@ -1,49 +1,32 @@
+🇧🇷 Português | 🇺🇸 [English](#english)
+
 # psee-professor
 
-Aplicativo mobile para o professor do sistema **PSEE** (Sistema de Pequena Escala de Ensino), desenvolvido em Python/Kivy.
-
-## Descrição
-
-App do lado professor do PSEE. Permite configurar os parâmetros da planta didática, definir tensões de referência e gerenciar os exercícios apresentados aos alunos.
-
-## Funcionalidades
-
-- Configuração do número de tensões de referência
-- Validação de entrada com tratamento de erros
-- Fluxo de confirmação antes de enviar configurações
-- Interface com múltiplas telas
-
-## Estrutura de telas
-
-```
-Menu → Tela1 (config) → Tela3 (confirmar) → Tela4 (botões)
-                      → Tela2 (erro)
-```
+App mobile Python/Kivy para o professor do sistema **PSEE** — configuração de tensões de referência.
 
 ## Requisitos
 
-```
-Python 3.x
-kivy
-pyserial
-```
-
 ```bash
 pip install kivy pyserial
-```
-
-## Como executar
-
-```bash
 python psee-professor.py
 ```
 
-## Projeto relacionado
+TCC — Centro Tecnológico Liberato — Novo Hamburgo/RS
 
-- [psee-aluno](https://github.com/hiagoluansilva/psee-aluno) — App do aluno
-- [esp32-serial-display-adc](https://github.com/hiagoluansilva/esp32-serial-display-adc) — Firmware ESP32
+---
 
-## Escola
+<a name="english"></a>
+🇧🇷 [Português](#) | 🇺🇸 English
 
-Centro Tecnológico Liberato — Novo Hamburgo/RS
-TCC — Trabalho de Conclusão de Curso
+# psee-professor
+
+Python/Kivy mobile app for the **PSEE** teacher — reference voltage configuration and exercise management.
+
+## Requirements
+
+```bash
+pip install kivy pyserial
+python psee-professor.py
+```
+
+Bachelor's Thesis — Centro Tecnológico Liberato — Novo Hamburgo/RS, Brazil
