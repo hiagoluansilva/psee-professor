@@ -1,0 +1,66 @@
+<Menu>:
+    BoxLayout:
+        orientation:"vertical"
+        padding:100
+        spacing:50
+        Image:
+            source:"imagens/logo_menu.png"
+        Button:
+            text:"Iniciar"
+            font_size:40
+            on_release:app.master.current="tela1"
+        Button:
+            text:"Sair"
+            font_size:40
+            on_release:app.stop()
+
+<Tela1>:
+    BoxLayout:
+        orientation:"vertical"
+        padding:100
+        spacing:50
+        Label:
+            text:"Digite o Número de Pontos de Medida"
+            font_size:40
+        TextInput:
+            id: n_tensoes
+        Button:
+            text:"OK"
+            on_release:
+                root.gravar()
+
+<Tela2>:
+    BoxLayout:
+        orientation:"vertical"
+        padding:100
+        spacing:50
+        Label:
+            id:confirma
+            font_size:40
+        Button:
+            text:"Voltar"
+            font_size:40
+            on_release:
+                app.master.current="tela1"
+
+<Tela3>:
+    BoxLayout:
+        orientation:"vertical"
+        padding:100
+        spacing:50
+        Label:
+            id:confirma
+            font_size:40
+        Button:
+            text:"OK"
+            font_size:40
+            on_release:
+                app.master.current="tela4"
+
+
+<Tela4>:
+    BoxLayout:
+        orientation:"vertical"
+        Label:
+            id:texto_tela4
+            font_size:0
